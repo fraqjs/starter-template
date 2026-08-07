@@ -10,17 +10,17 @@ importers:
     dependencies:
       '@fraqjs/color-log':
         specifier: ^0.2.0
-        version: 0.2.0(@fraqjs/fraq@0.16.1)
+        version: 0.2.0(@fraqjs/fraq@0.17.0)
       '@fraqjs/fraq':
-        specifier: ^0.16.1
-        version: 0.16.1
+        specifier: ^0.17.0
+        version: 0.17.0
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.1
         version: 2.5.2
       '@fraqjs/mock':
         specifier: ^0.1.0
-        version: 0.1.0(@fraqjs/fraq@0.16.1)
+        version: 0.1.0(@fraqjs/fraq@0.17.0)
       '@types/node':
         specifier: ^24.13.2
         version: 24.13.2
@@ -284,8 +284,12 @@ packages:
     peerDependencies:
       '@fraqjs/fraq': ^0.3.3
 
-  '@fraqjs/fraq@0.16.1':
-    resolution: {integrity: sha512-EfB9AYfwufhVNud6GDzjdEd0DLwR/x0IIv1YMmr65Ul20aptiaIt6NPpCyv1778i9ISDscvtTwY4B/ydlEsrfQ==}
+  '@fraqjs/fraq@0.17.0':
+    resolution: {integrity: sha512-AWDf5isRDLX1xIHqubU+l2SDa5Jp694UJjTJabMMbc0cnupPTmg9p12/y6+u1w8w+6S2iIMuAEMlid62M1cHEg==}
+    engines: {node: '>=22'}
+
+  '@fraqjs/kernel@0.1.0':
+    resolution: {integrity: sha512-Ob64cHAXVWD1m7Hf37APYnBhXuEsOIfqryLofS8x2hCFFERaehOBmKJCONtVyjpGPAPl6IVa/anBnsjEWnLliA==}
     engines: {node: '>=22'}
 
   '@fraqjs/mock@0.1.0':
@@ -769,18 +773,21 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@fraqjs/color-log@0.2.0(@fraqjs/fraq@0.16.1)':
+  '@fraqjs/color-log@0.2.0(@fraqjs/fraq@0.17.0)':
     dependencies:
-      '@fraqjs/fraq': 0.16.1
+      '@fraqjs/fraq': 0.17.0
       chalk: 5.6.2
 
-  '@fraqjs/fraq@0.16.1':
+  '@fraqjs/fraq@0.17.0':
     dependencies:
+      '@fraqjs/kernel': 0.1.0
       mitt: 3.0.1
 
-  '@fraqjs/mock@0.1.0(@fraqjs/fraq@0.16.1)':
+  '@fraqjs/kernel@0.1.0': {}
+
+  '@fraqjs/mock@0.1.0(@fraqjs/fraq@0.17.0)':
     dependencies:
-      '@fraqjs/fraq': 0.16.1
+      '@fraqjs/fraq': 0.17.0
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
