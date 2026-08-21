@@ -9,18 +9,18 @@ importers:
   .:
     dependencies:
       '@fraqjs/color-log':
-        specifier: ^0.2.0
-        version: 0.2.0(@fraqjs/fraq@0.17.0)
+        specifier: ^1.0.0
+        version: 1.0.0(@fraqjs/fraq@1.0.0)
       '@fraqjs/fraq':
-        specifier: ^0.17.0
-        version: 0.17.0
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.9
         version: 2.5.9
       '@fraqjs/plugin-mock':
-        specifier: ^0.2.0
-        version: 0.2.0(@fraqjs/fraq@0.17.0)
+        specifier: ^1.0.0
+        version: 1.0.0(@fraqjs/fraq@1.0.0)
       '@types/node':
         specifier: ^24.13.2
         version: 24.13.2
@@ -249,24 +249,24 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fraqjs/color-log@0.2.0':
-    resolution: {integrity: sha512-FVpv7780WECTc/dQrOF6iBwlcDFCyIlkqFo20R3ERiiPMas9w+Cl+vwOKzhPR4+lqQ7BXGPDU7GyXh00ao9wOQ==}
+  '@fraqjs/color-log@1.0.0':
+    resolution: {integrity: sha512-p9ZSBZHvXErM452qDydw5SUUgcomjFen2Czqthuz9FA+z2V/kIWTuoJfyILiRHec3VQg9tJjOxdJu6ziLXwxmA==}
     peerDependencies:
-      '@fraqjs/fraq': ^0.3.3
+      '@fraqjs/fraq': ^1.0.0
 
-  '@fraqjs/fraq@0.17.0':
-    resolution: {integrity: sha512-AWDf5isRDLX1xIHqubU+l2SDa5Jp694UJjTJabMMbc0cnupPTmg9p12/y6+u1w8w+6S2iIMuAEMlid62M1cHEg==}
+  '@fraqjs/fraq@1.0.0':
+    resolution: {integrity: sha512-NsMyu776XN7WGReiqkuG769LP/hdyNB4CLs3bkNSBmBEJZZqUuwtx/iPtcu3sZI8DYUj13i6TNG84iAqaRSIrw==}
     engines: {node: '>=22'}
 
-  '@fraqjs/kernel@0.1.0':
-    resolution: {integrity: sha512-Ob64cHAXVWD1m7Hf37APYnBhXuEsOIfqryLofS8x2hCFFERaehOBmKJCONtVyjpGPAPl6IVa/anBnsjEWnLliA==}
+  '@fraqjs/kernel@1.0.0':
+    resolution: {integrity: sha512-TH2LhJxKDTWm39pJAY5nVGzGWz0OS14+wGLvFozucFVNueC3jnsa+0KYQyO5icwNcXWHVZqK0vxkRLpXrUjISw==}
     engines: {node: '>=22'}
 
-  '@fraqjs/plugin-mock@0.2.0':
-    resolution: {integrity: sha512-bSrZE13mAZc9/lphyLOx7xOmo1XYypBS6Ld7C+yK9n2IvlT4vzNjDgmCfaj+p5616NOKeRxdThx2GvBsQ7cb8g==}
+  '@fraqjs/plugin-mock@1.0.0':
+    resolution: {integrity: sha512-k07i2FhIiFIlsm9KiWuP7SPnGCc3lWwKIOtir96DMxk5uG9xG1Xzqlj0MO/oTynvuIXSpy0EGgUnxvddeNltQA==}
     engines: {node: '>=22'}
     peerDependencies:
-      '@fraqjs/fraq': ^0.16.0
+      '@fraqjs/fraq': ^1.0.0
 
   '@oxc-project/types@0.144.0':
     resolution: {integrity: sha512-nuhZIOLuI6TFQ32I/WnUx+SCPY7SdSKwgnFHydAuoS1+Z4BRcaP+RRJmGzl9lw+0OFF7UmaESf7KQRXaNLHypg==}
@@ -513,9 +513,9 @@ packages:
     resolution: {integrity: sha512-tixWYgm5ZoOD+3g6UTea91eow5z6AAHaho3g0V9CNSNb45gM8SmflpAc+GRd1InC4AqN/07Unrgp56Y94N9hJQ==}
     engines: {node: '>=20.19.0'}
 
-  chalk@5.6.2:
-    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+  chalk@6.0.0:
+    resolution: {integrity: sha512-2uNTXIuTTxk7ciZgAU1BQcgnchcG0xXnrs6jzkQfj9SsRa9M2s5zE8WT96hS6KmG4MzWHSrvH43DF1m4XRkrFg==}
+    engines: {node: '>=22'}
 
   defu@6.1.7:
     resolution: {integrity: sha512-7z22QmUWiQ/2d0KkdYmANbRUVABpZ9SNYyH5vx6PZ+nE5bcC0l7uFvEfHlyld/HcGBFTL536ClDt3DEcSlEJAQ==}
@@ -794,21 +794,21 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@fraqjs/color-log@0.2.0(@fraqjs/fraq@0.17.0)':
+  '@fraqjs/color-log@1.0.0(@fraqjs/fraq@1.0.0)':
     dependencies:
-      '@fraqjs/fraq': 0.17.0
-      chalk: 5.6.2
+      '@fraqjs/fraq': 1.0.0
+      chalk: 6.0.0
 
-  '@fraqjs/fraq@0.17.0':
+  '@fraqjs/fraq@1.0.0':
     dependencies:
-      '@fraqjs/kernel': 0.1.0
+      '@fraqjs/kernel': 1.0.0
       mitt: 3.0.1
 
-  '@fraqjs/kernel@0.1.0': {}
+  '@fraqjs/kernel@1.0.0': {}
 
-  '@fraqjs/plugin-mock@0.2.0(@fraqjs/fraq@0.17.0)':
+  '@fraqjs/plugin-mock@1.0.0(@fraqjs/fraq@1.0.0)':
     dependencies:
-      '@fraqjs/fraq': 0.17.0
+      '@fraqjs/fraq': 1.0.0
 
   '@oxc-project/types@0.144.0': {}
 
@@ -942,7 +942,7 @@ snapshots:
 
   cac@7.0.0: {}
 
-  chalk@5.6.2: {}
+  chalk@6.0.0: {}
 
   defu@6.1.7: {}
 
